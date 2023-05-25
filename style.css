@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@font-face {
+    font-family: 'Exo Space';
+    src: url('./font/Exo_space.ttf');
+}
+@font-face {
+    font-family: 'Alfa Slab One';
+    src: url('./font/AlfaSlabOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'CYBORG';
+    src: url('./font/Cyborg.ttf');  
+}
+
+
+
+    * {
+        cursor: url(arrow/gray24.png),auto;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box; 
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    /* =====scroll bar======= */
+    .header {
+        position: fixed;
+        top: 50px;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .progress-bar {
+        height: 10px;
+        background: #001C55;
+        width: 0%;
+    }
+
+
+/* ========smooth scroll up========== */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+    /* ===========css for navbar=========== */
+    .top-nav {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #E0E0E0;
+        color: #001C55;
+        padding: 1em;
+        position:fixed;
+        z-index: 1;
+        top: 0;
+        }
+    
+        #nav-menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+    
+        #nav-menu > li {
+        margin: 0 1rem;
+        overflow: hidden;
+        }
+    
+        .menu-button-container {
+        display: none;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    
+        #menu-toggle {
+        display: none;
+        }
+    
+        .menu-button,
+        .menu-button::before,
+        .menu-button::after {
+        display: block;
+        background-color: black;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+        }
+    
+        .menu-button::before {
+        content: '';
+        margin-top: -8px;
+        }
+    
+        .menu-button::after {
+        content: '';
+        margin-top: 8px;
+        }
+    
+        #menu-toggle:checked + .menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+        }
+    
+        #menu-toggle:checked + .menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+        }
+    
+        #menu-toggle:checked + .menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+        }
+    
+    
+        .nav-link {
+        text-decoration: none;
+        color: #001C55;
+        }
+    
+        #nav-menu>li{
+        font-weight: bold;
+        }
+
+    /* -----------------------------------media query for nav bar--------------------------------- */
+@media (max-width: 878px) {
+    .menu-button-container {
+      display: flex;
+    }
+    #nav-menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ #nav-menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ #nav-menu li {
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #nav-menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: black;
+      background-color: #fff;
+    }
+  }
+
+
+
+      /* ====================== css for home ========================= */
+
+      .box1 {
+        width: 100%;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .box10 {
+        padding-top: 20px;
+        -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+        font-size: 35px;
+    }
+
+    .box10 span {
+        display: inline-block;
+        animation: box10 2s infinite;
+        animation-delay: calc(.1s * var(--i));
+        color: #001C55;
+    
+    }
+
+
+    @keyframes box10 {
+        0%,40%,100% {
+            transform: translateY(0)
+        }
+        20% {
+            transform: translateY(-20px)
+        }
+    }
+
+    .box11{
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .box111{
+        width: 60%;
+        /* font-family: 'Exo Space'; */
+        font-size: 28px;
+        text-align: left;
+        padding: 40px;
+        color: #001C55;
+    }
+    .box112{
+        width: 40%;
+    }
+    .box112>img{
+        max-width: 60%;
+    }
+    .wlcm_note{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .btn_div{
+        width: fit-content;
+        margin: auto;
+    }
+
+    .rbtn{
+        padding: 5px 10px; 
+        font-size: 18px;
+        background-color: #001C55;    
+        border: none;
+        border-radius: 7px;
+        box-shadow: 9px 7px 32px -11px #72351C;
+        transition: all .3s ease-in-out 0s; 
+        margin-top: 20px;  
+        transform: rotate(-3.6deg);          
+    }
+
+    .rbtn:hover{
+        border: 3px solid #635e87;
+        box-shadow: #001C55 0px 3px 29px 0px;
+        
+    }
+
+    .rbtn:hover, .rbtn>a:hover{
+        cursor: url(arrow/h30.png),auto;
+    }
+    .rbtn>a{
+        text-decoration: none;
+        color: #E0E0E0; 
+    }
+
