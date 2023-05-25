@@ -311,18 +311,24 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.home-img{
+.about-col-1{
     flex-basis: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.home-img img{
+.home-img{
     max-height: 80%;
     max-width: 80%;
     border-radius: 50%;
     border: 3px solid #72351C;
 }
+/* .about-col-1 img{
+    max-height: 80%;
+    max-width: 80%;
+    border-radius: 50%;
+    border: 3px solid #72351C;
+} */
 #user-detail-intro{
     flex-basis: 70%;
 }
