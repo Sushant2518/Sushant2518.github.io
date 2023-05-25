@@ -311,13 +311,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1{
+.home-img{
     flex-basis: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.about-col-1 img{
+.home-img img{
     max-height: 80%;
     max-width: 80%;
     border-radius: 50%;
@@ -389,4 +389,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(310px,1fr));
 }
-
+#user-detail-name{
+    margin-left: 60px;
+}
