@@ -323,10 +323,10 @@
     border-radius: 50%;
     border: 3px solid #72351C;
 }
-.about-col-2{
+#user-detail-intro{
     flex-basis: 70%;
 }
-.about-col-2>p{
+#user-detail-intro>p{
     font-size: 22px;
     font-weight: bold;
 }
