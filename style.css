@@ -599,31 +599,40 @@ h2 {
     margin-top: 20px;
     padding: 20px;
 }
-
+.github_stat{
+    width: 99%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
 #github-streak-stats{
-    width: 99%;
+    /* width: 99%;
     margin: auto;
     margin-top: 20px;
     text-align: center;
-    align-items: center;
-}
-#github-stats-card{
-    width: 99%;
-    margin: auto;
-    margin-top: 20px;
-    text-align: center;
-    align-items: center;
-}
-#github-top-langs{
-    width: 99%;
-    margin: auto;
-    margin-top: 20px;
-    text-align: center;
-    align-items: center;
-}
-.github_stat>img{
+    align-items: center; */
     max-width: 100%;
 }
+#github-stats-card{
+    /* width: 99%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center; */
+    max-width: 100%;
+}
+#github-top-langs{
+    /* width: 99%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center; */
+    max-width: 100%;
+}
+/* .github_stat>img{
+    max-width: 100%;
+} */
 .box8>.react-activity-calendar>.contrib-column{
     display: none;
 }
