@@ -798,6 +798,14 @@ h2 {
     margin-top: 10px;
     color: #001C55;
 }
+#contact-email{
+    margin-top: 10px;
+    color: #001C55;
+}
+#contact-phone{
+    margin-top: 10px;
+    color: #001C55;
+}
 .box5112{
     display: flex; 
     gap: 20px;
