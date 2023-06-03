@@ -593,7 +593,21 @@ h2 {
     padding: 20px;
 }
 
-.github_stat{
+#github-streak-stats{
+    width: 99%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+#github-stats-card{
+    width: 99%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+#github-top-langs{
     width: 99%;
     margin: auto;
     margin-top: 20px;
@@ -606,7 +620,5 @@ h2 {
 .box8>.calendar>.contrib-column{
     display: none;
 }
-.githubDeatails{
-    display: flex;
-}
+
 /* ============================================================ */
