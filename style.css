@@ -407,7 +407,7 @@ h2 {
 
 
      /* ====================== css for box3 ========================= */
-
+    /* project section  */
      .box3 {
         width: 99%;
         margin: auto;
@@ -572,7 +572,41 @@ h2 {
     100% { transform: rotate(-3deg); }
 }
 
-/* projects section start */
-
-
 /* project section end  */
+
+
+
+  /* ================css for box 8=============== */
+/* git hub all information  */
+  .contrib-column>.contrib-number{
+    font-size: 16px;
+}
+.box8>.calendar{
+    min-height: auto;
+    max-height: auto;
+}
+.js-calendar-graph-svg{
+    padding: 0 20px;
+}
+.box8{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.github_stat{
+    width: 99%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+.github_stat>img{
+    max-width: 100%;
+}
+.box8>.calendar>.contrib-column{
+    display: none;
+}
+.githubDeatails{
+    display: flex;
+}
+/* ============================================================ */
