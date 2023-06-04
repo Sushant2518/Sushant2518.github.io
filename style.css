@@ -189,7 +189,7 @@ h3 {
     margin: auto;
 }
 
-#resume-button-2{
+#resume-button-1{
     padding: 5px 10px; 
     font-size: 18px;
     background-color: #001C55;    
@@ -201,16 +201,16 @@ h3 {
     transform: rotate(-3.6deg);          
 }
 
-#resume-button-2:hover{
+#resume-button-1:hover{
     border: 3px solid #635e87;
     box-shadow: #001C55 0px 3px 29px 0px;
     
 }
 
-#resume-button-2:hover, #resume-button-2>a:hover{
+#resume-button-1:hover, #resume-button-1>a:hover{
     cursor: url(arrow/h30.png),auto;
 }
-#resume-button-2>a{
+#resume-button-1>a{
     text-decoration: none;
     color: #E0E0E0; 
 }
