@@ -330,7 +330,19 @@ h3 {
 /*==========================end========================================================*/
 
 /* styles.css */
-
+.box41{
+    width: fit-content;
+    margin: auto;
+    text-align: center;  
+}
+.box41>h1{
+    padding: 5px;
+    transform: rotate(-3.6deg);
+    border-radius: 12px;
+    color: #001C55;
+    border: 4px solid #001C55;
+    font-weight: bolder;
+}
  .card {
     display: flex;
     flex-direction: column;
@@ -835,8 +847,8 @@ h2 {
 .img51{
     max-width: 200px;
     max-height: 200px;
-    border-radius: 50%;
-    border: 4px solid #72351C;
+    border-radius:50%;
+    border: 2px solid #72351C;
 }
 .box5h1{
     color: #001C55;
@@ -847,3 +859,28 @@ h2 {
     margin-top: 20px;
 }
 /* =================================end================================ */
+#resume-button-2{
+    padding: 5px 10px; 
+    font-size: 18px;
+    background-color: #001C55;    
+    border: none;
+    border-radius: 7px;
+    box-shadow: 9px 7px 32px -11px #72351C;
+    transition: all .3s ease-in-out 0s; 
+    margin-top: 20px;  
+    transform: rotate(-3.6deg);          
+}
+
+#resume-button-2:hover{
+    border: 3px solid #635e87;
+    box-shadow: #001C55 0px 3px 29px 0px;
+    
+}
+
+#resume-button-2:hover, #resume-button-2>a:hover{
+    cursor: url(arrow/h30.png),auto;
+}
+#resume-button-2>a{
+    text-decoration: none;
+    color: #E0E0E0; 
+}
