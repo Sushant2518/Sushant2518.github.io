@@ -884,3 +884,29 @@ h2 {
     text-decoration: none;
     color: #E0E0E0; 
 }
+
+#resume-button-3{
+    padding: 5px 10px; 
+    font-size: 18px;
+    background-color: #001C55;    
+    border: none;
+    border-radius: 7px;
+    box-shadow: 9px 7px 32px -11px #72351C;
+    transition: all .3s ease-in-out 0s; 
+    margin-top: 20px;  
+    transform: rotate(-3.6deg);          
+}
+
+#resume-button-3:hover{
+    border: 3px solid #635e87;
+    box-shadow: #001C55 0px 3px 29px 0px;
+    
+}
+
+#resume-button-3:hover, #resume-button-2>a:hover{
+    cursor: url(arrow/h30.png),auto;
+}
+#resume-button-3>a{
+    text-decoration: none;
+    color: #E0E0E0; 
+}
