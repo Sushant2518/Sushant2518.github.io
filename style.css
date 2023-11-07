@@ -27,7 +27,11 @@ body {
 /* Styling the navigation menu */
 #nav-menu {
     background-color: #E0E0E0;
+    position: fixed;
+    /* top: 5px; */
+    z-index: 1;
     padding: 15px 0;
+    width: 100%;
 }
 
 #nav-menu ul {
@@ -914,3 +918,256 @@ h2 {
     text-decoration: none;
     color: #E0E0E0; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============media query============= */
+
+@media screen and (min-width: 200px) and (max-width: 400px){
+    .box10>span{
+        font-size: 15px;
+    }
+    .wlcm_note{
+        font-size: 18px;
+    }
+
+    .box11{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .box111{
+        width: 110%;
+    }
+    .some_about{
+        font-size: 20px;
+    }
+
+    .box112>img{
+        display: none;
+    }
+    .tool{
+        margin-top: 10px;
+    }
+    .box22{
+        width: 95%;
+    }
+    .box3{
+        padding: 2px;
+    }
+    .box32{
+        grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    }
+    .flip-card{
+        width: 350px;
+    }
+
+    .box01>h1, .box21>h1, .box31>h1, .box41>h1{
+        font-size: 20px;
+    }
+    .box01{
+        margin-bottom: 0;
+    }
+    .box6{
+        font-size: 16px;
+    }
+    .box52{
+        flex-direction:column-reverse;
+    }
+    .box511 {
+        padding: 0px;
+        margin-top: 17px;
+    }
+
+    .box7{
+        width: 100%;
+    }
+
+    .box8>.calendar>.contrib-column{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 520px) { 
+    .box10>span{
+        font-size: 17px;
+    }
+
+    .wlcm_note{
+        font-size: 20px;
+    }
+
+    .box11{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .box111{
+        width: 100%;
+    }
+    .some_about{
+        font-size: 25px;
+    }
+
+    .box112>img{
+        display: none;
+    }
+    .tool{
+        margin-top: 10px;
+    }
+    .box22{
+        width: 85%;
+    }
+    .box3{
+        padding: 5px;
+    }
+    .box6{
+        font-size: 18px;
+    }
+    .box52{
+        flex-direction:column-reverse;
+    }
+    .box511 {
+        padding: 0px;
+        margin-top: 17px;
+    }
+
+    .box7{
+        width: 100%;
+    }
+
+    .box8>.calendar>.contrib-column{
+        display: none;
+    }
+
+}
+
+.arrup{
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    color: #72351C;
+}
+
+@media screen and (min-width: 521px) and (max-width: 730px){
+
+    .box10>span{
+        font-size: 28px;
+    }
+
+    .box11{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .box111{
+        width: 95%;
+    }
+
+    .box112>img{
+        display: none;
+    }
+
+    .tool{
+        margin-top: 10px;
+    }
+    .box22{
+        width: 85%;
+    }
+    .box52{
+        flex-direction:column-reverse;
+    }
+
+    .box7{
+        width: 100%;
+    }
+
+    .box8>.calendar>.contrib-column{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 730px){
+.about-col-1,.about-col-2{
+    flex-basis: 100%;
+}
+.about-col-1{
+    margin-bottom: 30px;
+}
+.about-col-2{
+    font-size: 14px;
+}
+.tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+}
+
+
+
+/* -----------------------------------media query for nav bar--------------------------------- */
+/* -----------------------------------media query for nav bar--------------------------------- */
+@media (max-width: 878px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: black;
+      background-color: #fff;
+    }
+  }
+  
