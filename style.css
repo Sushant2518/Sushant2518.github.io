@@ -76,7 +76,14 @@ body {
     margin: 0;
     padding: 0;
 } */
-
+/* #logo1{
+    width: 50%;
+    height: 50px;
+} */
+#logo1 img{
+    margin-top: 25px;
+    width: 40%;
+}
 #nav-menu li {
     margin: 0 10px;
 }
