@@ -1485,3 +1485,606 @@ h2 {
         .menu>li{
         font-weight: bold;
         } */
+
+
+
+
+
+        @media all and (max-width: 900px) {
+    
+            .hamburger{
+            display: block;
+            cursor: pointer;
+            }
+            .hamburger .line{
+            width:30px;
+            height:3px;
+            background: #fefefe;
+            margin: 6px 0px;
+          
+            }
+            .nav-list{
+            height: 0px;
+            position: absolute;
+            top: 80px;
+            left:0px;
+            right:0px;
+            width:100vw;
+            background: lightslategray;;
+            transition: 0.2s;
+            overflow: hidden;
+            }
+            .nav-list.active{
+                height: 450px;
+            }
+            .nav-list ul{
+                display: block;
+                width: fit-content;
+                margin:80px auto 0 auto;
+                text-align: center;
+                transition: 0.5s;
+                opacity: 0;
+            }
+            .nav-list.active ul{
+                opacity:1
+            } 
+            .nav-list ul li a {
+                line-height: 30px;
+                color: black;
+            }
+            .nav-list ul li:nth-child(6):hover{
+                background-color:  transparent!important;
+                border:2px solid rgb(203, 196, 196);
+                border-radius: 10px;
+              
+            }
+            .nav-list ul li:nth-child(6):hover #resume-button-1{
+                background-color:  transparent !important;
+                border:none;
+            }
+            #main{
+            
+              display:flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            .pro{
+              width: 50%;
+             
+              height: auto;
+              text-align: center;
+          
+            }
+            .pro img{
+              width: 100%;
+              margin-top: 0px;
+            }
+           #main-cont{
+            width: 100%;
+           }
+             
+            .skill-box{
+                display: grid;
+               
+                grid-template-columns: repeat(3,1fr);
+          
+            } 
+            .toolls-box{
+              display: grid;
+             
+              grid-template-columns: repeat(3,1fr);
+          
+          } 
+          
+            .project{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+            .project-card{
+                width:90%;
+                margin-left: 30px;
+            }
+            .contact-content,.fields,.git-box{
+                display :flex;
+                flex-direction: column;
+                height:auto;   
+            } 
+            .contact-content,.icons{
+                padding:0px;
+                margin:20px
+            }
+            #main-cont p{
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+            #main-cont h1{
+                font-size: 40px;
+                margin-bottom: 15px;
+            }
+            #main-cont span{
+                font-size: 30px;
+            }
+            .project-github-link a{
+                font-size: 12px;
+             }
+             .project-deployed-link a{
+                 font-size: 12px;
+             }
+          }
+          @media all and (max-width: 600px) {
+            .skill-box{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            } 
+            .toolls-box{
+              display: grid;
+              grid-template-columns: repeat(2,1fr);
+            }
+            .project-card{
+                width:85%;
+                margin-left: 20px;
+            }
+           
+          }
+          @media all and (max-width: 400px) {
+            .skill-box{
+               margin-left: 10px;
+            } 
+            .toolls-box{
+              margin-left: 10px;
+            }
+           
+            .project-card{
+                width:85%;
+                margin-left: 10px;
+            }
+            .project-github-link a{
+               font-size: 10px;
+            }
+            .project-deployed-link a{
+                font-size: 10px;
+            }
+          }
+          @media all and (max-width: 350px) {
+            .skill-box{
+                margin-left: -25px;
+             } 
+             .project-card{
+                margin-left: 10px;
+            }
+          }
+          @media all and (max-width: 280px) {
+            .skill-box{
+              margin-left: 20px;
+           } 
+            .toolls-box{
+            
+              margin-left: -35px;
+            }
+            .project-card{
+              margin-left: -15px;
+          }
+          
+          }
+          
+          @media all and (max-width: 300px) {
+            .hero img{
+               width:100%
+            }@media all and (max-width: 900px) {
+    
+                .hamburger{
+                display: block;
+                cursor: pointer;
+                }
+                .hamburger .line{
+                width:30px;
+                height:3px;
+                background: #fefefe;
+                margin: 6px 0px;
+              
+                }
+                .nav-list{
+                height: 0px;
+                position: absolute;
+                top: 80px;
+                left:0px;
+                right:0px;
+                width:100vw;
+                background: lightslategray;;
+                transition: 0.2s;
+                overflow: hidden;
+                }
+                .nav-list.active{
+                    height: 450px;
+                }
+                .nav-list ul{
+                    display: block;
+                    width: fit-content;
+                    margin:80px auto 0 auto;
+                    text-align: center;
+                    transition: 0.5s;
+                    opacity: 0;
+                }
+                .nav-list.active ul{
+                    opacity:1
+                } 
+                .nav-list ul li a {
+                    line-height: 30px;
+                    color: black;
+                }
+                .nav-list ul li:nth-child(6):hover{
+                    background-color:  transparent!important;
+                    border:2px solid rgb(203, 196, 196);
+                    border-radius: 10px;
+                  
+                }
+                .nav-list ul li:nth-child(6):hover #resume-button-1{
+                    background-color:  transparent !important;
+                    border:none;
+                }
+                #main{
+                
+                  display:flex;
+                  flex-direction: column;
+                  align-items: center;
+                }
+                .pro{
+                  width: 50%;
+                 
+                  height: auto;
+                  text-align: center;
+              
+                }
+                .pro img{
+                  width: 100%;
+                  margin-top: 0px;
+                }
+               #main-cont{
+                width: 100%;
+               }
+                 
+                .skill-box{
+                    display: grid;
+                   
+                    grid-template-columns: repeat(3,1fr);
+              
+                } 
+                .toolls-box{
+                  display: grid;
+                 
+                  grid-template-columns: repeat(3,1fr);
+              
+              } 
+              
+                .project{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                }
+                .project-card{
+                    width:90%;
+                    margin-left: 30px;
+                }
+                .contact-content,.fields,.git-box{
+                    display :flex;
+                    flex-direction: column;
+                    height:auto;   
+                } 
+                .contact-content,.icons{
+                    padding:0px;
+                    margin:20px
+                }
+                #main-cont p{
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+                #main-cont h1{
+                    font-size: 40px;
+                    margin-bottom: 15px;
+                }
+                #main-cont span{
+                    font-size: 30px;
+                }
+                .project-github-link a{
+                    font-size: 12px;
+                 }
+                 .project-deployed-link a{
+                     font-size: 12px;
+                 }
+              }
+              @media all and (max-width: 600px) {
+                .skill-box{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                } 
+                .toolls-box{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                }
+                .project-card{
+                    width:85%;
+                    margin-left: 20px;
+                }
+               
+              }
+              @media all and (max-width: 400px) {
+                .skill-box{
+                   margin-left: 10px;
+                } 
+                .toolls-box{
+                  margin-left: 10px;
+                }
+               
+                .project-card{
+                    width:85%;
+                    margin-left: 10px;
+                }
+                .project-github-link a{
+                   font-size: 10px;
+                }
+                .project-deployed-link a{
+                    font-size: 10px;
+                }
+              }
+              @media all and (max-width: 350px) {
+                .skill-box{
+                    margin-left: -25px;
+                 } 
+                 .project-card{
+                    margin-left: 10px;
+                }
+              }
+              @media all and (max-width: 280px) {
+                .skill-box{
+                  margin-left: 20px;
+               } 
+                .toolls-box{
+                
+                  margin-left: -35px;
+                }
+                .project-card{
+                  margin-left: -15px;
+              }
+              
+              }
+              
+              @media all and (max-width: 300px) {
+                .hero img{
+                   width:100%
+                }
+                .skill-box{
+                   margin-left: -25px;
+                } 
+                .skill-box>div{
+                    width:90px
+                }
+                .project-card{
+                    width:85%;
+                }
+                .project-github-link a{
+                   font-size: 10px;
+                }
+                .project-deployed-link a{
+                    font-size: 10px;
+                }
+                .info{
+                    margin-left: 20px;
+                }
+              }@media all and (max-width: 900px) {
+    
+                .hamburger{
+                display: block;
+                cursor: pointer;
+                }
+                .hamburger .line{
+                width:30px;
+                height:3px;
+                background: #fefefe;
+                margin: 6px 0px;
+              
+                }
+                .nav-list{
+                height: 0px;
+                position: absolute;
+                top: 80px;
+                left:0px;
+                right:0px;
+                width:100vw;
+                background: lightslategray;;
+                transition: 0.2s;
+                overflow: hidden;
+                }
+                .nav-list.active{
+                    height: 450px;
+                }
+                .nav-list ul{
+                    display: block;
+                    width: fit-content;
+                    margin:80px auto 0 auto;
+                    text-align: center;
+                    transition: 0.5s;
+                    opacity: 0;
+                }
+                .nav-list.active ul{
+                    opacity:1
+                } 
+                .nav-list ul li a {
+                    line-height: 30px;
+                    color: black;
+                }
+                .nav-list ul li:nth-child(6):hover{
+                    background-color:  transparent!important;
+                    border:2px solid rgb(203, 196, 196);
+                    border-radius: 10px;
+                  
+                }
+                .nav-list ul li:nth-child(6):hover #resume-button-1{
+                    background-color:  transparent !important;
+                    border:none;
+                }
+                #main{
+                
+                  display:flex;
+                  flex-direction: column;
+                  align-items: center;
+                }
+                .pro{
+                  width: 50%;
+                 
+                  height: auto;
+                  text-align: center;
+              
+                }
+                .pro img{
+                  width: 100%;
+                  margin-top: 0px;
+                }
+               #main-cont{
+                width: 100%;
+               }
+                 
+                .skill-box{
+                    display: grid;
+                   
+                    grid-template-columns: repeat(3,1fr);
+              
+                } 
+                .toolls-box{
+                  display: grid;
+                 
+                  grid-template-columns: repeat(3,1fr);
+              
+              } 
+              
+                .project{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                }
+                .project-card{
+                    width:90%;
+                    margin-left: 30px;
+                }
+                .contact-content,.fields,.git-box{
+                    display :flex;
+                    flex-direction: column;
+                    height:auto;   
+                } 
+                .contact-content,.icons{
+                    padding:0px;
+                    margin:20px
+                }
+                #main-cont p{
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+                #main-cont h1{
+                    font-size: 40px;
+                    margin-bottom: 15px;
+                }
+                #main-cont span{
+                    font-size: 30px;
+                }
+                .project-github-link a{
+                    font-size: 12px;
+                 }
+                 .project-deployed-link a{
+                     font-size: 12px;
+                 }
+              }
+              @media all and (max-width: 600px) {
+                .skill-box{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                } 
+                .toolls-box{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                }
+                .project-card{
+                    width:85%;
+                    margin-left: 20px;
+                }
+               
+              }
+              @media all and (max-width: 400px) {
+                .skill-box{
+                   margin-left: 10px;
+                } 
+                .toolls-box{
+                  margin-left: 10px;
+                }
+               
+                .project-card{
+                    width:85%;
+                    margin-left: 10px;
+                }
+                .project-github-link a{
+                   font-size: 10px;
+                }
+                .project-deployed-link a{
+                    font-size: 10px;
+                }
+              }
+              @media all and (max-width: 350px) {
+                .skill-box{
+                    margin-left: -25px;
+                 } 
+                 .project-card{
+                    margin-left: 10px;
+                }
+              }
+              @media all and (max-width: 280px) {
+                .skill-box{
+                  margin-left: 20px;
+               } 
+                .toolls-box{
+                
+                  margin-left: -35px;
+                }
+                .project-card{
+                  margin-left: -15px;
+              }
+              
+              }
+              
+              @media all and (max-width: 300px) {
+                .hero img{
+                   width:100%
+                }
+                .skill-box{
+                   margin-left: -25px;
+                } 
+                .skill-box>div{
+                    width:90px
+                }
+                .project-card{
+                    width:85%;
+                }
+                .project-github-link a{
+                   font-size: 10px;
+                }
+                .project-deployed-link a{
+                    font-size: 10px;
+                }
+                .info{
+                    margin-left: 20px;
+                }
+              }
+            .skill-box{
+               margin-left: -25px;
+            } 
+            .skill-box>div{
+                width:90px
+            }
+            .project-card{
+                width:85%;
+            }
+            .project-github-link a{
+               font-size: 10px;
+            }
+            .project-deployed-link a{
+                font-size: 10px;
+            }
+            .info{
+                margin-left: 20px;
+            }
+          }
