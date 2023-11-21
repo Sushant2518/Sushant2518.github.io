@@ -51,4 +51,8 @@ function opentab(tabname){
 
 
 
-
+function resume() {
+  window.open(
+      "https://drive.google.com/file/d/162UIVQDrHXR1lgjUyw6H-sznlxiwaFw5/view?usp=sharing"
+  );
+}
