@@ -51,8 +51,21 @@ function opentab(tabname){
 
 
 
-function resume() {
-  window.open(
-      "https://drive.google.com/file/d/162UIVQDrHXR1lgjUyw6H-sznlxiwaFw5/view?usp=sharing"
-  );
+
+function downloadAndOpen() {
+  const resumeURL =
+       "https://drive.google.com/file/d/162UIVQDrHXR1lgjUyw6H-sznlxiwaFw5/view?usp=sharing";
+
+  const downloadURL =
+  "https://drive.google.com/uc?export=download&id=162UIVQDrHXR1lgjUyw6H-sznlxiwaFw5";;
+  window.open(resumeURL,"_blank");
+
+  const link = document.createElement("a");
+  link.href=downloadURL;
+
+  link.download = "Sushant-Narvekar-Resume.pdf";
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
