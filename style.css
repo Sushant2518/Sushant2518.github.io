@@ -548,7 +548,7 @@ h2 {
         font-weight: bolder;
     }
 
-    .box32{
+    /* .box32{
         margin-top: 30px;
         padding: 20px;
         display: grid;
@@ -567,54 +567,54 @@ h2 {
         max-height: 100%;
         max-width: 100%;
         border-radius: 10px;
-        /* transition: transform .5s ease; */
+       
         transition: 1s ease;
-    }
+    } */
 
     /* =========flip animation====== */
 
-    .project-card {
+    /* .project-card {
         background-color: transparent;
         width: 350px;
         margin: auto;
         height: 245px;
         border: 1px solid #001C55;
-        perspective: 1000px; /* Remove this if you don't want the 3D effect */
-      }
+        perspective: 1000px; 
+      } */
       
       /* This container is needed to position the front and back side */
-      .flip-card-inner {
+      /* .flip-card-inner {
         position: relative;
         width: 100%;
         height: 100%;
         text-align: center;
         transition: transform 0.8s;
         transform-style: preserve-3d;
-      }
+      } */
       
       /* Do an horizontal flip when you move the mouse over the flip box container */
-      .project-card:hover .flip-card-inner {
+      /* .project-card:hover .flip-card-inner {
         transform: rotateY(180deg);
-      }
+      } */
       
       /* Position the front and back side */
-      .flip-card-front, .flip-card-back {
+      /* .flip-card-front, .flip-card-back {
         border-radius: 10px;
         position: absolute;
         width: 100%;
         height: 100%;
-        -webkit-backface-visibility: hidden; /* Safari */
+        -webkit-backface-visibility: hidden; 
         backface-visibility: hidden;
-      }
+      } */
       
       /* Style the front side (fallback if image is missing) */
-      .flip-card-front {
+      /* .flip-card-front {
         background-color: #bbb;
         color: black;
-      }
+      } */
       
       /* Style the back side */
-      .flip-card-back {
+      /* .flip-card-back {
         background-color: #bbb;
         color: #001C55;
         transform: rotateY(180deg);
@@ -648,13 +648,13 @@ h2 {
         align-items: center;
         justify-content: center;
         gap: 30px;
-      }
+      } */
 
 
       
 
         /* ====hanging animation======= */
-.swing {
+/* .swing {
     animation: swing ease-in-out 1s infinite alternate;
     transform-origin: center -20px;
     float:left;
@@ -675,7 +675,7 @@ h2 {
     border-right: none;
     transform: rotate(45deg);
 }
-/* nail */
+
 .swing:before{
     content: '';
     position: absolute;
@@ -689,10 +689,132 @@ h2 {
 @keyframes swing {
     0% { transform: rotate(3deg); }
     100% { transform: rotate(-3deg); }
-}
+} */
 
 /* project section end  */
+/* new design of projects details start */
+/*---------------------------------Project------------------------------------ */
+.project{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:40px;
+    margin: auto;
+    padding-top:40px;
+    padding-bottom: 40px;
+    transition:transform .5s ease-in-out; 
+  }
+  
+  .project-card:hover{
+    transform: scale(1.02);
+    background: rgb(203, 196, 196);
+    color: black;
+  
+  }
+  .project-card:hover .project-github-link,
+  .project-card:hover .project-deployed-link,
+  .project-card:hover .project-card h2{
+  border:3px solid black;
+  background-color: rgb(203, 196, 196)!important;
+  color:rgb(203, 196, 196);;
+  }
+  .project-card:hover .small_div>img{
+    border: 3px solid black;
+  }
+  
+  .project-card h2{
+    text-align: center;
+    margin:10px 10px;
+    color: #72351C;
+    
+  }
+  .project-card{
+    box-shadow: 10px 10px 5px lightslategray;
+   
+    color: #001C55;
+    border-radius: 70px;
+    padding:60px 60px;
+    border: 2px solid rgb(203, 196, 196);
+    height: 680px;
+    
+  }
+  #projects >span{
+    display: block;
+    height: 3px;
+    width: 170px;
+    background-color: rgb(203, 196, 196);
+    margin: auto;
+  }
+  
+  
+  .project-card img{
+    width: 100%;
+    border-radius: 10px;
+    border:3px solid rgb(203, 196, 196)
+  }
+  .project .project-card p{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  
+  .project-tech-stack{
+    margin-top: 10px;
+  }
+  .repo-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 45px;
+    margin-top: 80px;
+    margin-left: 10px;
+  }
+  
+  .project-github-link {
+    display: flex;
+    width: 35%;
+    border: 2px solid rgb(203, 196, 196);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightslategray;
+    
+  }
+  .project-github-link a {
+    text-decoration: none;
+    
+  }
+  .project-github-link button{
+    border: none;
+    background-color:transparent;
+    color:black;
+   font-size: 20px;
+   text-decoration: none;
+  }
+  
+  .project-deployed-link {
+    display: flex;
+    width: 35%;
+    border: 2px solid rgb(203, 196, 196);
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightslategray;
+  }
+  .project-deployed-link a{
+    text-decoration: none;
+    
+  }
+  .project-deployed-link button{
+    border: none;
+    background-color:transparent;
+    color:black;
+   font-size: 20px;
+   text-decoration: none;
+  }
 
+  /* end here project details */
 
 
   /* ================css for box 8=============== */
@@ -1067,7 +1189,7 @@ h2 {
     .box3{
         padding: 2px;
     }
-    .box32{
+    .project{
         grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
     }
     .flip-card{
@@ -1098,7 +1220,14 @@ h2 {
     .box8>.calendar>.contrib-column{
         display: none;
     }
-
+    /* .project{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .project-card{
+        width:90%;
+        margin-left: 30px;
+    } */
 }
 
 @media screen and (min-width: 400px) and (max-width: 520px) { 
@@ -1234,6 +1363,7 @@ h2 {
       position: absolute;
       top: 0;
       margin-top: 50px;
+      /* margin-right: 60px; */
       left: 0;
       flex-direction: column;
       width: 100%;
