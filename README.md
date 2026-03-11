@@ -2,33 +2,43 @@
 
 Personal portfolio website of **Sushant Narvekar** — Java Backend Developer based in Bengaluru, India.
 
-## Structure
+## Folder Structure (keep exactly as-is)
 
 ```
-├── index.html        # Main HTML
-├── style.css         # All styles
-├── script.js         # Tabs, scroll reveal, active nav
-├── image/            # Profile photo and other images
-│   └── profile.png
-├── pdf/              # Resume PDF
-│   └── Sushant_Narvekar_Resume.pdf
-└── README.md
+Sushant2518.github.io/
+├── index.html                        ← Main HTML
+├── style.css                         ← All styles
+├── script.js                         ← JS (tabs, scroll reveal, active nav)
+├── README.md
+│
+├── image/
+│   ├── IMG_20221217_175527.png       ← Profile photo (hero + contact + favicon)
+│   ├── coder.svg                     ← About section illustration
+│   ├── styloi.png                    ← Stylio project
+│   ├── StockXtreme3.png              ← StockXtreme project
+│   ├── eddie bauer.png               ← Eddie Bauer project
+│   ├── vaccination.png               ← Vaccination project
+│   └── EASY LEARN.png                ← EasyLearn project
+│
+├── logo/
+│   ├── java_logo.png
+│   ├── spring_logo.png
+│   ├── hibernate_logo.png
+│   ├── sql_logo.png
+│   ├── Git_logo.png
+│   ├── pngegg.png                    ← DSA
+│   ├── js_logo2.jpg
+│   ├── html_logo.png
+│   ├── css_logo.webp
+│   └── eclipse_logo.png
+│
+└── pdf/
+    └── Sushant_Narvekar_Resume.pdf   ← Resume download
 ```
 
-## Sections
+## Deploy
 
-- **Hero** — Name, title, quick stats
-- **Experience** — Current role at Eqsense Technologies (Lawcubator)
-- **About** — Bio with tabbed Technical Skills / Soft Skills / Education
-- **Tech Stack** — Skills grid
-- **Projects** — Lawcubator, EasyLearn, StockXtreme, Stylio, Vaccination Portal
-- **Contact** — Email, phone, location, resume download
-
-## Setup
-
-1. Add your profile photo at `image/profile.png`
-2. Place your resume at `pdf/Sushant_Narvekar_Resume.pdf`
-3. Push to `main` branch — GitHub Pages deploys automatically
+Push all files to `main` branch → GitHub Pages auto-deploys to `sushant2518.github.io`
 
 ## Live
 
