@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sushant Narvekar — Java Backend Developer</title>
+<link rel="icon" href="./image/IMG_20221217_175527.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -11,6 +12,7 @@
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <a class="nav-logo" href="#home">Sushant Narvekar</a>
   <ul class="nav-links">
@@ -20,7 +22,7 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="pdf/Sushant_Narvekar_Resume.pdf" download class="nav-cta">Resume</a>
+  <a href="./pdf/Sushant_Narvekar_Resume.pdf" download class="nav-cta">Resume</a>
 </nav>
 
 <!-- HERO -->
@@ -35,9 +37,9 @@
     </div>
   </div>
   <div class="hero-right reveal delay-1">
+    <!-- Uses your existing profile photo from the image/ folder -->
     <img class="hero-img"
-      src="image/profile.png"
-      onerror="this.style.background='var(--light)';this.removeAttribute('src')"
+      src="./image/IMG_20221217_175527.png"
       alt="Sushant Narvekar" />
     <div class="hero-cards">
       <div class="hero-card"><div class="val">1+</div><div class="key">Years Experience</div></div>
@@ -88,6 +90,8 @@
   </div>
   <div class="about-grid">
     <div class="about-text reveal">
+      <!-- Uses your existing coder SVG from image/ folder -->
+      <img src="./image/coder.svg" alt="Coder illustration" class="about-illustration">
       <p>I'm Sushant Narvekar — a Java Backend Developer who transitioned from Mechanical Engineering to software, bringing structured analytical thinking to everything I build.</p>
       <div class="pullquote">"Strong understanding of data structures, algorithms, OOP, and low-level backend design — applied to real production systems."</div>
       <p>After completing full-stack training at Masai School, I joined Eqsense Technologies where I contribute to a production-grade legal tech SaaS platform. I care deeply about writing clean, reliable, and maintainable backend code.</p>
@@ -128,22 +132,61 @@
     <h2 class="sec-title">Tech Stack</h2>
     <span class="sec-num">03</span>
   </div>
+  <!-- Uses logo images from your logo/ folder (same filenames as original) -->
   <div class="skills-grid reveal">
-    <div class="skill-tile"><div class="icon">☕</div><div class="name">Java</div></div>
-    <div class="skill-tile"><div class="icon">🍃</div><div class="name">Spring Boot</div></div>
-    <div class="skill-tile"><div class="icon">🔐</div><div class="name">Spring Security</div></div>
-    <div class="skill-tile"><div class="icon">🔗</div><div class="name">REST APIs</div></div>
-    <div class="skill-tile"><div class="icon">🗄️</div><div class="name">Hibernate</div></div>
-    <div class="skill-tile"><div class="icon">💾</div><div class="name">MySQL / PostgreSQL</div></div>
-    <div class="skill-tile"><div class="icon">📦</div><div class="name">DynamoDB</div></div>
-    <div class="skill-tile"><div class="icon">☁️</div><div class="name">AWS Basics</div></div>
-    <div class="skill-tile"><div class="icon">🐳</div><div class="name">Docker</div></div>
-    <div class="skill-tile"><div class="icon">🔀</div><div class="name">Git & GitHub</div></div>
-    <div class="skill-tile"><div class="icon">🏗️</div><div class="name">Data Structures</div></div>
-    <div class="skill-tile"><div class="icon">🎨</div><div class="name">HTML · CSS · JS</div></div>
+    <div class="skill-tile">
+      <img src="./logo/java_logo.png" alt="Java">
+      <div class="name">Java</div>
+    </div>
+    <div class="skill-tile">
+      <img src="./logo/spring_logo.png" alt="Spring Boot">
+      <div class="name">Spring Boot</div>
+    </div>
+    <div class="skill-tile">
+      <img src="./logo/hibernate_logo.png" alt="Hibernate">
+      <div class="name">Hibernate</div>
+    </div>
+    <div class="skill-tile">
+      <img src="./logo/sql_logo.png" alt="SQL">
+      <div class="name">MySQL / SQL</div>
+    </div>
+    <div class="skill-tile">
+      <img src="./logo/Git_logo.png" alt="Git">
+      <div class="name">Git & GitHub</div>
+    </div>
+    <div class="skill-tile">
+      <img src="./logo/pngegg.png" alt="DSA">
+      <div class="name">Data Structures</div>
+    </div>
+    <div class="skill-tile">
+      <img src="./logo/js_logo2.jpg" alt="JavaScript">
+      <div class="name">JavaScript</div>
+    </div>
+    <div class="skill-tile">
+      <img src="./logo/html_logo.png" alt="HTML5">
+      <div class="name">HTML5</div>
+    </div>
+    <div class="skill-tile">
+      <img src="./logo/css_logo.webp" alt="CSS3">
+      <div class="name">CSS3</div>
+    </div>
+    <div class="skill-tile">
+      <img src="./logo/eclipse_logo.png" alt="Eclipse">
+      <div class="name">Eclipse IDE</div>
+    </div>
+    <!-- New skills (use emoji fallback — add logo files to logo/ folder if you have them) -->
+    <div class="skill-tile">
+      <div class="icon-emoji">🐳</div>
+      <div class="name">Docker</div>
+    </div>
+    <div class="skill-tile">
+      <div class="icon-emoji">☁️</div>
+      <div class="name">AWS Basics</div>
+    </div>
   </div>
 </section>
 
+<!-- STATS BAR -->
 <div class="stats-row">
   <div class="stat-cell reveal"><div class="stat-n">1+</div><div class="stat-l">Year Professional Experience</div></div>
   <div class="stat-cell reveal delay-1"><div class="stat-n">2160+</div><div class="stat-l">Coding Hours</div></div>
@@ -162,6 +205,7 @@
   </div>
   <div class="projects-list reveal">
 
+    <!-- Project 1: Lawcubator (Production) -->
     <div class="project-row">
       <div class="proj-num">01</div>
       <div>
@@ -177,6 +221,7 @@
       </div>
     </div>
 
+    <!-- Project 2: EasyLearn — uses ./image/EASY LEARN.png -->
     <div class="project-row">
       <div class="proj-num">02</div>
       <div>
@@ -187,11 +232,12 @@
         <p class="proj-desc">Role-based learning management system supporting admin, instructor, and student workflows. Implemented CRUD operations and ORM mappings using Hibernate with a backend-first approach.</p>
       </div>
       <div class="proj-links">
-        <a href="https://drive.google.com/file/d/1uNs16WbjE56_RsK0fPOfvrPiduAHYiEb/view" class="proj-link" target="_blank">Demo ↗</a>
+        <a href="https://drive.google.com/file/d/1uNs16WbjE56_RsK0fPOfvrPiduAHYiEb/view?usp=sharing" class="proj-link" target="_blank">Demo ↗</a>
         <a href="https://github.com/Sushant2518/EasyLearn" class="proj-link ghost" target="_blank">GitHub ↗</a>
       </div>
     </div>
 
+    <!-- Project 3: StockXtreme — uses ./image/StockXtreme3.png -->
     <div class="project-row">
       <div class="proj-num">03</div>
       <div>
@@ -202,11 +248,12 @@
         <p class="proj-desc">Stock broker management system to help brokers efficiently manage client portfolios and investments with clean backend logic.</p>
       </div>
       <div class="proj-links">
-        <a href="https://drive.google.com/drive/folders/194j97D2rKk2apEGiIADafBGMSsUGyQO8" class="proj-link" target="_blank">Demo ↗</a>
+        <a href="https://drive.google.com/drive/folders/194j97D2rKk2apEGiIADafBGMSsUGyQO8?usp=drive_link" class="proj-link" target="_blank">Demo ↗</a>
         <a href="https://github.com/Sushant2518/StockXtreme" class="proj-link ghost" target="_blank">GitHub ↗</a>
       </div>
     </div>
 
+    <!-- Project 4: Stylio — uses ./image/styloi.png -->
     <div class="project-row">
       <div class="proj-num">04</div>
       <div>
@@ -222,8 +269,25 @@
       </div>
     </div>
 
+    <!-- Project 5: Eddie Bauer — uses ./image/eddie bauer.png -->
     <div class="project-row">
       <div class="proj-num">05</div>
+      <div>
+        <div class="proj-top">
+          <span class="proj-name">Eddie Bauer Clone</span>
+          <span class="proj-stack">HTML · CSS · JS</span>
+        </div>
+        <p class="proj-desc">E-commerce website for fashionable clothing and lifestyle products with responsive design and smooth user experience.</p>
+      </div>
+      <div class="proj-links">
+        <a href="https://tranquil-piroshki-52c8e5.netlify.app/" class="proj-link" target="_blank">Live ↗</a>
+        <a href="https://github.com/Sushant2518/cluttered-stranger-7385" class="proj-link ghost" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+
+    <!-- Project 6: Vaccination — uses ./image/vaccination.png -->
+    <div class="project-row">
+      <div class="proj-num">06</div>
       <div>
         <div class="proj-top">
           <span class="proj-name">Vaccination Portal</span>
@@ -258,10 +322,15 @@
       <div class="socials">
         <a href="https://github.com/Sushant2518" class="soc-link" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/sushant-narvekar-46172b192/" class="soc-link" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/mr_sushant_narvekar1825/" class="soc-link" target="_blank">Instagram</a>
         <a href="https://wa.me/919075664790" class="soc-link" target="_blank">WhatsApp</a>
       </div>
     </div>
     <div class="contact-right reveal delay-1">
+      <!-- Uses your existing profile photo -->
+      <div class="contact-photo-wrap">
+        <img src="./image/IMG_20221217_175527.png" alt="Sushant Narvekar" class="contact-photo">
+      </div>
       <div class="c-card">
         <div class="cl">Currently at</div>
         <div class="cv">Eqsense Technologies</div>
@@ -274,7 +343,8 @@
           <p>Full-time backend roles & collaborations</p>
         </div>
       </div>
-      <a href="pdf/Sushant_Narvekar_Resume.pdf" download class="resume-btn">Download Resume</a>
+      <!-- Resume button links to ./pdf/ folder — same as original repo -->
+      <a href="./pdf/Sushant_Narvekar_Resume.pdf" download class="resume-btn">Download Resume</a>
     </div>
   </div>
 </section>
