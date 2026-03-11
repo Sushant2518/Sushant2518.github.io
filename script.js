@@ -12,15 +12,31 @@ function openTab(e, id) {
 }
 
 // ---- SCROLL REVEAL ----
-const revealObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in');
-    }
-  });
-}, { threshold: 0.08 });
+// Safety fallback: if page is already scrolled or observer fails, show all
+function showAll() {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+}
 
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+// Trigger reveal on load for elements already in view
+window.addEventListener('load', function () {
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Fallback: show everything after 1 second no matter what
+    setTimeout(showAll, 1000);
+  } else {
+    // Browser doesn't support IntersectionObserver — show everything
+    showAll();
+  }
+});
 
 // ---- ACTIVE NAV LINK ----
 const sections = document.querySelectorAll('section[id]');
