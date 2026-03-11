@@ -726,15 +726,6 @@ footer p { font-size: 12px; color: var(--muted); }
   }
 }
 
-/* ---- ABOUT ILLUSTRATION ---- */
-.about-illustration {
-  width: 100%;
-  max-width: 280px;
-  display: block;
-  margin-bottom: 28px;
-  opacity: 0.85;
-}
-
 /* ---- SKILL TILE - logo images ---- */
 .skill-tile img {
   width: 48px;
