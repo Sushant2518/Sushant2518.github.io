@@ -752,10 +752,11 @@ footer p { font-size: 12px; color: var(--muted); }
 }
 .contact-photo {
   width: 100%;
-  max-height: 240px;
-  object-fit: cover;
-  object-position: top;
+  max-height: 320px;
+  object-fit: contain;
+  object-position: center;
   display: block;
   filter: grayscale(10%);
   border: 1px solid var(--border);
+  background: var(--off);
 }
